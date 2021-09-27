@@ -1,0 +1,6 @@
+#!/bin/bash
+input=windwaker.ly
+output=$(basename $(pwd))
+pdf=$output.pdf
+
+lilypond -l WARNING -o $output windwaker.ly && open $pdf && open -a visual\ Studio\ Code $input

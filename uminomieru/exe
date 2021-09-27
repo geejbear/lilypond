@@ -1,0 +1,6 @@
+#!/bin/bash
+input=uminomieru.ly
+output=$(basename $(pwd))
+pdf=$output.pdf
+
+lilypond -l WARNING -o $output uminomieru.ly && open $pdf && open -a visual\ Studio\ Code $input
