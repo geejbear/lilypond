@@ -1,4 +1,4 @@
-\version "2.23.10"
+\version "2.22.0"
 
 \paper {}
 
@@ -6,7 +6,7 @@
 
 global= {
   \time 4/4
-  \key c \major
+  \key g\minor
 }
 
 violinOne = \new Voice \relative c'' {
@@ -30,8 +30,31 @@ viola = \new Voice \relative c' {
 
 cello = \new Voice \relative c' {
   \clef bass
-  c2 b
-  a1
+    g1
+    f2. f8 g
+    c,2~ c8 d r es~
+    es2.~ es8 fis
+    g1
+    f
+    es
+    es2 es8 f4.
+    g1
+    f2. f8 g
+    c,2~ c4. cis8
+    d1
+    g2. g8 fis
+    f2. f8 e
+    es1
+    d' \bar "|."
+    es,16 es es es~ es es8 es es es16 es8 es
+    f16 f f f~ f f8 f f f16 f8 f
+    g4 a bes c
+    d1
+    bes,8 bes16 bes r8 bes16 bes bes8 bes16 bes r8 bes16 bes 
+    bes8 bes16 bes r8 bes16 bes bes8 bes16 bes r8 bes16 bes 
+    bes8 bes16 bes r8 bes16 bes bes8 bes16 bes r8 bes16 bes 
+    bes8 bes16 bes r8 bes16 bes bes8 bes16 bes r8 bes16 bes 
+    
   \bar "|."
 }
 
