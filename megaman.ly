@@ -1,8 +1,8 @@
 \version "2.22.0"
 
-\paper {}
+\paper { }
 
-\header {}
+\header { }
 
 global= {
   \time 4/4
@@ -50,10 +50,7 @@ cello = \new Voice \relative c' {
     f16 f f f~ f f8 f f f16 f8 f
     g4 a bes c
     d1
-    bes,8 bes16 bes r8 bes16 bes bes8 bes16 bes r8 bes16 bes 
-    bes8 bes16 bes r8 bes16 bes bes8 bes16 bes r8 bes16 bes 
-    bes8 bes16 bes r8 bes16 bes bes8 bes16 bes r8 bes16 bes 
-    bes8 bes16 bes r8 bes16 bes bes8 bes16 bes r8 bes16 bes 
+    \repeat unfold 4 { bes,8 bes16 bes r8 bes16 bes bes8 bes16 bes r8 bes16 bes } 
     
   \bar "|."
 }
